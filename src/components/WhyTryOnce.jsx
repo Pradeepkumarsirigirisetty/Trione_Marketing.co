@@ -68,7 +68,7 @@ export default function WhyTryOnce() {
               <div
                 key={r.title}
                 ref={cardRef}
-                className={`flex gap-4 p-5 rounded-xl bg-navy-800/40 border border-white/6 hover:border-violet-500/30 hover:bg-navy-800/70 transition-all duration-400 group ${
+                className={`flex gap-4 p-5 rounded-xl bg-navy-800/40 border border-white/10 hover:border-violet-500/30 hover:bg-navy-800/70 transition-all duration-40 group ${
                   cardVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
                 }`}
                 style={{ transitionDelay: `${i * 80}ms`, transitionProperty: 'opacity, transform, background, border' }}

@@ -54,7 +54,7 @@ export default function About() {
               <div
                 key={member.role}
                 ref={cardRef}
-                className={`bg-navy-800/60 border border-white/8 rounded-2xl p-7 hover:border-white/15 transition-all duration-500 card-glow ${
+                className={`bg-navy-800/60 border border-white/10 rounded-2xl p-7 hover:border-white/15 transition-all duration-500 card-glow ${
                   cardVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                 }`}
                 style={{ transitionDelay: `${i * 150}ms` }}
@@ -84,7 +84,7 @@ export default function About() {
 
         {/* Location badge */}
         <div className="mt-12 flex justify-center">
-          <div className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-navy-800/60 border border-white/8 text-white/50 text-sm">
+          <div className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-navy-800/60 border border-white/10 text-white/50 text-sm">
             <MapPin size={14} className="text-violet-400" />
             Hyderabad &amp; Visakhapatnam, Andhra Pradesh · India
           </div>

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Send, MessageCircle, Mail, CheckCircle2 } from 'lucide-react'
+import { Send, MessageCircle, Mail, CheckCircle2, Instagram } from 'lucide-react'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
 export default function Contact() {
@@ -63,7 +63,7 @@ export default function Contact() {
             </a>
 
             <a
-              href="mailto:hello@trione.in"
+              href="mailto:trionemarketco@gmail.com"
               className="flex items-center gap-4 p-5 rounded-2xl bg-violet-600/10 border border-violet-500/25 hover:bg-violet-600/15 hover:border-violet-500/40 transition-all duration-300 group"
             >
               <div className="w-12 h-12 rounded-xl bg-violet-500/20 flex items-center justify-center group-hover:bg-violet-500/30 transition-colors">
@@ -71,12 +71,26 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-white font-semibold text-sm">Email Us</p>
-                <p className="text-white/40 text-xs mt-0.5"></p>
+                <p className="text-white/40 text-xs mt-0.5">We'll get back to you soon</p>
+              </div>
+            </a>
+            <a
+              href="https://www.instagram.com/trionemarketing.co"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 p-5 rounded-2xl bg-pink-500/10 border border-pink-500/25 hover:bg-pink-500/15 hover:border-pink-500/40 transition-all duration-300 group"
+            >
+              <div className="w-12 h-12 rounded-xl bg-pink-500/20 flex items-center justify-center group-hover:bg-pink-500/30 transition-colors">
+                <Instagram size={22} className="text-pink-400" />
+              </div>
+              <div>
+                <p className="text-white font-semibold text-sm">Instagram</p>
+                <p className="text-white/40 text-xs mt-0.5">@trionemarketing.co</p>
               </div>
             </a>
 
             {/* Services list */}
-            <div className="p-5 rounded-2xl bg-navy-800/50 border border-white/6">
+            <div className="p-5 rounded-2xl bg-navy-800/50 border border-white/10">
               <p className="text-white/60 text-xs font-semibold uppercase tracking-widest mb-3">We help with</p>
               {['Website Development', 'Cinematic Video Production', 'AI Business Agents', 'Custom Projects'].map((s) => (
                 <div key={s} className="flex items-center gap-2 py-1.5 text-sm text-white/50">
@@ -91,7 +105,7 @@ export default function Contact() {
           <div className="lg:col-span-3">
             <form
               onSubmit={handleSubmit}
-              className="bg-navy-800/60 backdrop-blur-sm border border-white/8 rounded-2xl p-7 space-y-5"
+              className="bg-navy-800/60 backdrop-blur-sm border border-white/10 rounded-2xl p-7 space-y-5"
             >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
@@ -144,9 +158,9 @@ export default function Contact() {
                   name="message"
                   value={form.message}
                   onChange={handleChange}
-                  rows={4}
+                  rows={6}
                   placeholder="Describe your business and what you're looking for..."
-                  className="w-full bg-navy-900/60 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-white/20 focus:outline-none focus:border-violet-500/50 focus:bg-navy-900/80 transition-all resize-none"
+                  className="w-full bg-navy-900/60 border border-white/10 rounded-xl px-5 py-4 text-sm text-white placeholder-white/20 focus:outline-none focus:border-violet-500/50 focus:bg-navy-900/80 transition-all resize-none"
                 />
               </div>
 

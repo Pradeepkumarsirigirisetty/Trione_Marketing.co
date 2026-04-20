@@ -47,7 +47,7 @@ function ServiceCard({ service, index }) {
   return (
     <div
       ref={ref}
-      className={`group relative bg-navy-800/60 backdrop-blur-sm border border-white/8 rounded-2xl p-6 lg:p-8 transition-all duration-500 card-glow ${service.border} ${
+      className={`group relative bg-navy-800/60 backdrop-blur-sm border border-white/10 rounded-2xl p-6 lg:p-8 transition-all duration-500 card-glow ${service.border} ${
         visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
       }`}
       style={{ transitionDelay: `${index * 120}ms` }}

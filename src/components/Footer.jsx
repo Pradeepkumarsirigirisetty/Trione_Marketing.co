@@ -18,8 +18,7 @@ export default function Footer() {
         </div>
 
         <div className="flex items-center gap-1">
-          © {year} Trione Marketing.co. Made with
-          <Heart size={12} className="text-violet-400 mx-1" />
+          © {year} Trione Marketing.co. Made with Idea and <Heart size={12} className="text-pink-400" />
           in Vizag &amp; Hyderabad.
         </div>
       </div>
