@@ -28,7 +28,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <a href="#" className="flex items-center gap-2">
             <img
-              src="/logo_no.png"
+              src="https://res.cloudinary.com/dpeojc51e/image/upload/v1776675711/logo_no_dyrabj.png"
               alt="Trione Marketing.co"
               className="h-9 w-auto object-contain"
             />
