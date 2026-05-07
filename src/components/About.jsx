@@ -11,6 +11,7 @@ const team = [
     color: 'from-violet-600 to-violet-400',
     badgeColor: 'bg-violet-600/15 text-violet-300',
     location: 'Hyderabad · from Vizag',
+    portfolio: 'https://pradeepkumarsirigirisetty.github.io',
   },
   {
     initials: 'VK',
@@ -21,6 +22,7 @@ const team = [
     color: 'from-cyan-500 to-cyan-300',
     badgeColor: 'bg-cyan-500/15 text-cyan-300',
     location: 'Visakhapatnam (Vizag)',
+    portfolio: 'https://durgavinaykumar6666.github.io',
   },
 ]
 
@@ -73,10 +75,19 @@ export default function About() {
 
                 {/* Bio */}
                 <p className="text-white/55 text-sm leading-relaxed mb-3">{member.bio}</p>
+
                 <div className="inline-flex items-center gap-1.5 text-xs text-white/30">
                   <MapPin size={11} className="text-violet-400" />
                   {member.location}
                 </div>
+                <a
+                  href={member.portfolio}
+            
+                >
+                  <div className="mt-4 w-40 gap-2 px-4 py-2 rounded-full bg-violet-600/20 text-violet-300 text-sm font-medium hover:bg-violet-600/30 transition-colors">
+                    View Portfolio
+                  </div>
+                </a>
               </div>
             )
           })}
